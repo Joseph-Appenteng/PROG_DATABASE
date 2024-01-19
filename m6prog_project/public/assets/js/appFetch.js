@@ -59,3 +59,23 @@ function FormToDictionary(form)
     }
     return formKeyValue;
 }
+
+let form = event.target;//de submit event komt vanuit de form FormToDictionary (form);
+    let jsonForm = FormToDictionary(form);
+    console.log(jsonForm);
+
+    let options =
+    {
+        method: "POST",
+        cache: "no-cache",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(jsonForm)
+    }
+ 
+    fetch("fetchPost.php", options)
+    .then(async (response)=>
+    {
+        console.log(response);
+    });
+
+
