@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <style>
+    /* Style to arrange form elements in a column */
+    form {
+      display: flex;
+      flex-direction: column;
+      width: 200px;
+      margin-bottom: 20px;
+    }
+    input,
+    input[type="submit"] {
+      margin-bottom: 10px;
+      padding: 5px;
+      width: 100%;
+    }
+    label {
+      margin-bottom: 5px;
+      font-weight: bold;
+    }
+  </style>
+  <script defer type="text/javascript" src="assets/js/appFetch.js"defer></script>
+</head>
+<body>
+  <form id="getForm" action="fetchGet.php">
+    <label for="getArticle">Article:</label>
+    <input id="getArticle" type="text" name="article" />
+    <label for="getMaxPrice">Max Price:</label>
+    <input id="getMaxPrice" type="text" name="maxPrice" />
+    <input type="submit" value="Submit" />
+  </form>
+
+  <form id="postForm" action="fetchPost.php">
+    <label for="postArticle">Article:</label>
+    <input id="postArticle" type="text" name="article" />
+    <label for="postMaxPrice">Max Price:</label>
+    <input id="postMaxPrice" type="text" name="maxPrice" />
+    <input type="submit" value="Submit" />
+  </form>
+</body>
+</html>
