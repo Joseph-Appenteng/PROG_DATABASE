@@ -1,0 +1,1 @@
+update imageupload set uploaddatatime = DATE_ADD(CURRENT_DATE, INTERVAL 1 YEAR);

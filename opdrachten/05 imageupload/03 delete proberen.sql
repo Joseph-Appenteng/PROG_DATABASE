@@ -1,0 +1,1 @@
+delete from metadatafoto where id =1

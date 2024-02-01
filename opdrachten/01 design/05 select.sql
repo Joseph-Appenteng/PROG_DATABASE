@@ -1,1 +1,1 @@
-Select datum,aantalGraden FROM  weer.weersomstandighedenPerDag
+Select * FROM  weer.weersomstandighedenPerDag
